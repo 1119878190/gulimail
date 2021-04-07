@@ -1,0 +1,20 @@
+package com.demo.gulimail.member.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.demo.common.utils.PageUtils;
+import com.demo.gulimail.member.entity.MemberCollectSubjectEntity;
+
+import java.util.Map;
+
+/**
+ * 会员收藏的专题活动
+ *
+ * @author lx
+ * @email 1119878190@qq.com
+ * @date 2021-04-02 21:07:15
+ */
+public interface MemberCollectSubjectService extends IService<MemberCollectSubjectEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
